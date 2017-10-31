@@ -20,12 +20,17 @@
 2. Atur *port-forwarding* pada VM supaya bisa diakses dari luar.
 3. Jalankan VM Ubuntu server.
 4. Instal ssh pada ubuntu server supaya bisa diakses secara *remote*.
+
     ```
     $ sudo apt install ssh
     ```
- 5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/).
+    
+5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/).
+ 
     <img src="https://s1.postimg.org/83n0xsjzy7/image.png">
- 6. Instal kebutuhan sistem yaitu `Apache`, `PHP`, dan `MySQL`.
+    
+6. Instal kebutuhan sistem yaitu `Apache`, `PHP`, dan `MySQL`.
+ 
     ```
     $ sudo apt get update
     $ sudo apt install apache2
@@ -36,11 +41,39 @@
     $ sudo apt install php-gd php-mcrypt php-mbstring php-xml php-ssh2 php-zip php-curl
     $ sudo service apache2 restart
     ```
- 7. Buat *directory* pada `/var/www/html/` untuk menampung *file* October yang akan diinstal
+    
+### Instalasi October
+1. Instal [composer](https://getcomposer.org/download/) yang digunakan untuk mengarahkan aplikasi october ke dalam database yang dibuat
+ 
+    ```
+    $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    $ php composer-setup.php
+    $ php -r "unlink('composer-setup.php');"
+    ```
+
+2. Buat database mysql untuk menampung data dari aplikasi october
+    ```
+    $ mysql -u root
+    ```
+    
+    ```
+    > create database databasename
+    ```
+    
+3. Buat *directory* pada `/var/www/html/` untuk menampung *file* October yang akan diinstal
+ 
     ```
     $ mkdir october
     ```
-8. Masuk ke *directory* october yang sudah dibuat. Lalu *download* file October dari website [octobercms.com](https://octobercms.com/)
+    
+4. Masuk ke *directory* october yang sudah dibuat. Lalu *download* file October dari website [octobercms.com](https://octobercms.com/)
+
     ```
     $ php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
+    ```
+    
+5. Instal october untuk mengarahkan aplikasi october ke database yang telah dibuat
+
+    ```
+    $ php artisan october:install
     ```
