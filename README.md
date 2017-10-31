@@ -25,4 +25,22 @@
     ```
  5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/).
     <img src="https://s1.postimg.org/83n0xsjzy7/image.png">
- 6. Instal kebutuhan sistem yaitu 'Apache', 'PHP', dan 'MySQL'.
+ 6. Instal kebutuhan sistem yaitu `Apache`, `PHP`, dan `MySQL`.
+    ```
+    $ sudo apt get update
+    $ sudo apt install apache2
+    $ sudo apt install mysql-server
+    $ sudo apt install php
+    $ sudo apt install libapache2-mod-php
+    $ sudo apt install php-mysql
+    $ sudo apt install php-gd php-mcrypt php-mbstring php-xml php-ssh2 php-zip php-curl
+    $ sudo service apache2 restart
+    ```
+ 7. Buat *directory* pada `/var/www/html/` untuk menampung *file* October yang akan diinstal
+    ```
+    $ mkdir october
+    ```
+8. Masuk ke *directory* october yang sudah dibuat. Lalu *download* file October dari website [octobercms.com](https://octobercms.com/)
+    ```
+    $ php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
+    ```
