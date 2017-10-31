@@ -130,15 +130,12 @@
 
 Octobercms dapat digunakan untuk membuat blog. Blog dapat dibuat di `Blog->New post`. 
 Isi konten Blog sesuai dengan yang diinginkan.
-
     <img src="https://s1.postimg.org/1givrbsdbj/image.png">
 
 Setelah isi konten, ditentukan waktu publish dari blog tersebut. Dapat mengupload gambar pada konten ini. Klik Save.
-
     <img src="https://s1.postimg.org/6hnpx1pnen/image.png">
 
 Pergi ke url `localhost:8888/october/index.php/` lalu pilih menu Blog. Pilih Blog yang dibuat untuk melihat hasilnya.
-
     <img src="https://s1.postimg.org/1p2f595o4f/image.png">
     <img src="https://s1.postimg.org/2s24g55sbj/image.png">
     
