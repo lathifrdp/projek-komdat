@@ -92,6 +92,7 @@
     <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
 
 # Referensi
-- https://github.com/auriza/komdat-lab/blob/master/p01.md
 - https://octobercms.com
 - https://github.com/octobercms/october
+- https://getcomposer.org/
+- https://github.com/auriza/komdat-lab/blob/master/p01.md
