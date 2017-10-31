@@ -96,30 +96,42 @@
 
 6. Halaman admin dapat diakses dengan url `localhost:8888/october/index.php/backend`
 7. Masukkan username dan password yang diisikan pada saat konfigurasi *database*
+
     <img src="https://s1.postimg.org/198wenqka7/image.png">
+    
 8. Jika username dan password benar maka akan masuk ke halaman dashboard admin
     
     <img src="https://s19.postimg.org/dw30pk903/image.png">
     
 9. Pada menu Settings, terdapat beberapa konfigurasi yang dapat dilakukan diantaranya mendownload plugin atau tema.
 10. Sebagai contoh, kami mendownload tema Vanilla yang digunakan sebagai template blog
+
     ```
     - Settings->Updates & Plugins
     - Ketikkan rainlab.vanilla
     - Aplikasi akan otomatis mengunduh dan menginstal tema
     ```
+    
     <img src="https://s19.postimg.org/ozi1hfkc3/image.png">
+    
 11. Untuk mengganti tema dapat dilakukan di `Settings->Front-end theme`. Aktifkan tema yang diinginkan
 12. Apabila berhasil maka halaman utama blog akan berubah
+
     <img src="https://s19.postimg.org/dgrqwo543/image.png">
 
 # Maintenance
 - Pada menu Settings, kita dapat mengatur apakah akan menyimpan segala aktivitas yang dilakukan ke dalam database, misalnya menyimpan *log bad request* atau *log system events*.
+
 - Untuk mengaktifkannya dapat dilakukan dengan mengklik toggle `on`
+
     <img src="https://s19.postimg.org/3kv9al1ir/image.png">
-- Untuk aktivitas *log bad request* dapat dilihat pada database di tabel `system_request_logs`
-    <img src="https://s19.postimg.org/53qnfrq5f/image.png">
     
+- Untuk aktivitas *log bad request* dapat dilihat pada database di tabel `system_request_logs`
+
+    <img src="https://s19.postimg.org/53qnfrq5f/image.png">
+
+# Pemakaian
+
 # Referensi
 - https://octobercms.com
 - https://github.com/octobercms/october
