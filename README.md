@@ -23,6 +23,6 @@
     ```
     $ sudo apt install ssh
     ```
- 5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY] (http://www.putty.org/).
+ 5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/).
     <img src="https://s1.postimg.org/83n0xsjzy7/image.png">
  6. Instal kebutuhan sistem yaitu 'Apache', 'PHP', dan 'MySQL'.
