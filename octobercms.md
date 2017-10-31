@@ -128,7 +128,7 @@
     
 - Untuk aktivitas *log bad request* dapat dilihat pada database di tabel `system_request_logs`
 
-    <img src="https://s19.postimg.org/53qnfrq5f/image.png">
+    [](https://postimg.org/image/y64xilcf3/)
 
 # Pemakaian
 
