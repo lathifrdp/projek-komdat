@@ -91,6 +91,14 @@
     
     <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
 
+9. Masuk ke backend untuk mengatur konten dengan url 'localhost:8888/october/index.php/backend'. Harus login terlebih dahulu.
+
+    <img src="https://s1.postimg.org/198wenqka7/image.png">
+
+10. Setelah login, keluar tampilan dashboard dari octobercms dan sudah dapat digunakan.
+    
+    <img src="https://s1.postimg.org/6cxqslnk7j/image.png">
+
 # Referensi
 - https://octobercms.com
 - https://github.com/octobercms/october
