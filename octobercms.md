@@ -43,15 +43,24 @@
     ```
     
 ### Instalasi October
-1. Instal [composer](https://getcomposer.org/download/) yang digunakan untuk mengarahkan aplikasi october ke dalam database yang dibuat
+1. Buat *directory* pada `/var/www/html/` untuk menampung *file* October yang akan diinstal
  
     ```
-    $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-    $ php composer-setup.php
-    $ php -r "unlink('composer-setup.php');"
+    $ mkdir october
+    ```
+    
+2. Masuk ke *directory* october yang sudah dibuat. Lalu *download* file October dari website [octobercms.com](https://octobercms.com/)
+
+    ```
+    $ php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
     ```
 
-2. Buat database mysql untuk menampung data dari aplikasi october
+8. Cek hasil instalasi pada web browser dengan url `localhost:8888/october`
+    
+    <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
+    
+# Konfigurasi
+1. Buat database mysql untuk menampung data dari aplikasi october
     ```
     $ mysql -u root
     ```
@@ -60,49 +69,57 @@
     > create database databasename
     ```
     
-3. Buat *directory* pada `/var/www/html/` untuk menampung *file* October yang akan diinstal
+2. Instal [composer](https://getcomposer.org/download/) yang digunakan untuk mengarahkan aplikasi october ke dalam database yang dibuat
  
     ```
-    $ mkdir october
-    ```
+    $ php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    $ php composer-setup.php
+    $ php -r "unlink('composer-setup.php');"
+    ```   
     
-4. Masuk ke *directory* october yang sudah dibuat. Lalu *download* file October dari website [octobercms.com](https://octobercms.com/)
-
-    ```
-    $ php -r "eval('?>'.file_get_contents('https://octobercms.com/api/installer'));"
-    ```
-    
-5. Instal october untuk mengarahkan aplikasi october ke database yang telah dibuat
+3. *Setting* aplikasi untuk mengarahkan october ke database yang telah dibuat
 
     ```
     $ php artisan october:install
     ```
-6. Ikuti perintah instalasi october sampai selesai
+    
+4. Ikuti perintah instalasi october sampai selesai
 
     <img src="https://s1.postimg.org/1hfoefj04v/image.png">
     <img src="https://s1.postimg.org/1zihh6cban/image.png">
 
-7. Ubah *permission* *directory* aplikasi october
+5. Ubah *permission* *directory* aplikasi october
     
     ```
     $ chmod -R 775
     ```
-8. Cek hasil instalasi pada web browser dengan url `localhost:8888/october`
-    
-    <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
 
-9. Masuk ke backend untuk mengatur konten dengan url `localhost:8888/october/index.php/backend`. Harus login terlebih dahulu.
-
+6. Halaman admin dapat diakses dengan url `localhost:8888/october/index.php/backend`
+7. Masukkan username dan password yang diisikan pada saat konfigurasi *database*
     <img src="https://s1.postimg.org/198wenqka7/image.png">
-
-10. Setelah login, keluar tampilan dashboard dari octobercms dan sudah dapat digunakan.
+8. Jika username dan password benar maka akan masuk ke halaman dashboard admin
     
-    <img src="https://s1.postimg.org/6cxqslnk7j/image.png">
-   
-11. Pilih setting untuk mengatur konten. Konten yang dapat diatur diantaranya adalah tema, plugin dan blog.
+    <img src="https://s19.postimg.org/dw30pk903/image.png">
+    
+9. Pada menu Settings, terdapat beberapa konfigurasi yang dapat dilakukan diantaranya mendownload plugin atau tema.
+10. Sebagai contoh, kami mendownload tema Vanilla yang digunakan sebagai template blog
+    ```
+    - Settings->Updates & Plugins
+    - Ketikkan rainlab.vanilla
+    - Aplikasi akan otomatis mengunduh dan menginstal tema
+    ```
+    <img src="https://s19.postimg.org/ozi1hfkc3/image.png">
+11. Untuk mengganti tema dapat dilakukan di `Settings->Front-end theme`. Aktifkan tema yang diinginkan
+12. Apabila berhasil maka halaman utama blog akan berubah
+    <img src="https://s19.postimg.org/dgrqwo543/image.png">
 
-    <img src="https://s1.postimg.org/1ul8hyuodr/image.png">
-
+# Maintenance
+- Pada menu Settings, kita dapat mengatur apakah akan menyimpan segala aktivitas yang dilakukan ke dalam database, misalnya menyimpan *log bad request* atau *log system events*.
+- Untuk mengaktifkannya dapat dilakukan dengan mengklik toggle `on`
+    <img src="https://s19.postimg.org/3kv9al1ir/image.png">
+- Untuk aktivitas *log bad request* dapat dilihat pada database di tabel `system_request_logs`
+    <img src="https://s19.postimg.org/53qnfrq5f/image.png">
+    
 # Referensi
 - https://octobercms.com
 - https://github.com/octobercms/october
