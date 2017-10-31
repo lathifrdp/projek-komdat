@@ -77,3 +77,16 @@
     ```
     $ php artisan october:install
     ```
+6. Ikuti perintah instalasi october sampai selesai
+
+    <img src="https://s1.postimg.org/1hfoefj04v/image.png">
+    <img src="https://s1.postimg.org/1zihh6cban/image.png">
+
+7. Ubah *permission* *directory* aplikasi october
+    
+    ```
+    $ chmod -R 775
+    ```
+8. Cek hasil instalasi pada web browser dengan url `localhost:8888/october`
+    
+    <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
