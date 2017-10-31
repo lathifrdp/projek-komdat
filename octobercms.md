@@ -1,7 +1,7 @@
 <h1 align="center"><img src="https://avatars0.githubusercontent.com/u/5554805?s=400&v=4"></h1>
 
 # October
-**October** adalah suatu *Content Management System* (CMS) yang gratis dan *open source* yang berbasis [Laravel PHP Framework](https://laravel.com/). October dibangun oleh [Alexey Bobkov](https://www.linkedin.com/in/aleksey-bobkov-232ba02b) dan [Samuel Georges](https://www.linkedin.com/in/samuel-georges-0a964131) yang merupakan programmer dan UX Design dari Kanada dan Australia. October dirilis pada 15 Mei 2014. October dibuat bertujuan untuk mempermudah user dalam membangun sebuah website.
+<justify>**October** adalah suatu *Content Management System* (CMS) yang gratis dan *open source* yang berbasis [Laravel PHP Framework](https://laravel.com/). October dibangun oleh [Alexey Bobkov](https://www.linkedin.com/in/aleksey-bobkov-232ba02b) dan [Samuel Georges](https://www.linkedin.com/in/samuel-georges-0a964131) yang merupakan programmer dan UX Design dari Kanada dan Australia. October dirilis pada 15 Mei 2014. October dibuat bertujuan untuk mempermudah user dalam membangun sebuah website.</justify>
 
 # Instalasi
 
@@ -25,7 +25,7 @@
     $ sudo apt install ssh
     ```
     
-5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/).
+5. Setelah ssh sudah terinstall, akses ubuntu server dengan [PuTTY](http://www.putty.org/) (untuk pengguna OS Windows).
  
     <img src="https://s1.postimg.org/83n0xsjzy7/image.png">
     
@@ -97,7 +97,9 @@
 6. Halaman admin dapat diakses dengan url `localhost:8888/october/index.php/backend`
 
 7. Masukkan username dan password yang diisikan pada saat konfigurasi *database*
+
     <img src="https://s1.postimg.org/198wenqka7/image.png">
+    
 8. Jika username dan password benar maka akan masuk ke halaman dashboard admin
     
     <img src="https://s19.postimg.org/dw30pk903/image.png">
@@ -122,25 +124,49 @@
 
 - Pada menu Settings, kita dapat mengatur apakah akan menyimpan segala aktivitas yang dilakukan ke dalam database, misalnya menyimpan *log bad request* atau *log system events*.
 - Untuk mengaktifkannya dapat dilakukan dengan mengklik toggle `on`
+    
     <img src="https://s19.postimg.org/3kv9al1ir/image.png">
+    
 - Untuk aktivitas *log bad request* dapat dilihat pada database di tabel `system_request_logs`
+    
     <img src="https://s19.postimg.org/53qnfrq5f/image.png">
 
 # Cara Pemakaian
 
 Octobercms dapat digunakan untuk membuat blog. Blog dapat dibuat di `Blog->New post`. 
 Isi konten Blog sesuai dengan yang diinginkan.
-    <img src="https://s1.postimg.org/1givrbsdbj/image.png">
+
+<img src="https://s1.postimg.org/1givrbsdbj/image.png">
 
 Setelah isi konten, ditentukan waktu publish dari blog tersebut. Dapat mengupload gambar pada konten ini. Klik Save.
-    <img src="https://s1.postimg.org/6hnpx1pnen/image.png">
+
+<img src="https://s1.postimg.org/6hnpx1pnen/image.png">
 
 Pergi ke url `localhost:8888/october/index.php/` lalu pilih menu Blog. Pilih Blog yang dibuat untuk melihat hasilnya.
-    <img src="https://s1.postimg.org/1p2f595o4f/image.png">
-    <img src="https://s1.postimg.org/2s24g55sbj/image.png">
+
+<img src="https://s1.postimg.org/1p2f595o4f/image.png">
+<img src="https://s1.postimg.org/2s24g55sbj/image.png">
+
+# Pembahasan
+
+## Kelebihan OctoberCMS
+- Akses menu backend cepat karena tidak banyak plugin.
+- Front-end nya simpel dan ringan.
+
+## Kekurangan OctoberCMS
+- Theme tergolong sedikit.
+- Tidak cocok untuk pengguna awam karena butuh skill pemrograman.
+
+## Perbandingan dengan Wordpress
+
+- Untuk installasi, OctoberCMS lebih unggul dibandingkan Wordpress karena OctoberCMS dapat menggunakan CLI atau Wizard. Sedangkan Wordpress hanya dapat menggunakan Wizard.
+
+- Untuk popularitas, OctoberCMS kalah dengan Wordpress dikarenakan Wordpress sudah berdiri lebih dulu (2003) dibandingan OctoberCMS (2014).
     
 # Referensi
 - https://octobercms.com
 - https://github.com/octobercms/october
 - https://getcomposer.org/
 - https://github.com/auriza/komdat-lab/blob/master/p01.md
+- https://leaderinternet.com/blog/october-cms-vs-wordpress
+- https://www.codepolitan.com/october-cms-berbasis-laravel-sebuah-opsi-lain-untuk-membangun-website
