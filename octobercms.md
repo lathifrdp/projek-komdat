@@ -90,3 +90,8 @@
 8. Cek hasil instalasi pada web browser dengan url `localhost:8888/october`
     
     <img src="https://octobercms.com/storage/app/uploads/public/537/f21/0a5/537f210a56ce6580725366.png">
+
+# Referensi
+- https://github.com/auriza/komdat-lab/blob/master/p01.md
+- https://octobercms.com
+- https://github.com/octobercms/october
