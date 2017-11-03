@@ -1,8 +1,10 @@
 <h1 align="center"><img src="https://avatars0.githubusercontent.com/u/5554805?s=400&v=4"></h1>
 
+[October](#october) | [Instalasi](#instalasi) | [Konfigurasi](#konfigurasi) | [Cara Pemakaian](#cara-pemakaian) | [Pembahasan](#pembahasan) | [Referensi](#referensi)
+:---:|:---:|:---:|:---:|:---:|:---:
 # October
 <justify>**October** adalah suatu *Content Management System* (CMS) yang gratis dan *open source* yang berbasis [Laravel PHP Framework](https://laravel.com/). October dibangun oleh [Alexey Bobkov](https://www.linkedin.com/in/aleksey-bobkov-232ba02b) dan [Samuel Georges](https://www.linkedin.com/in/samuel-georges-0a964131) yang merupakan programmer dan UX Design dari Kanada dan Australia. October dirilis pada 15 Mei 2014. October dibuat bertujuan untuk mempermudah user dalam membangun sebuah website.</justify>
-
+<embed src="https://www.youtube.com/watch?v=XOKCXvxZtRE" autostart="false" height="30" width="144" />
 # Instalasi
 
 ## Kebutuhan Sistem
